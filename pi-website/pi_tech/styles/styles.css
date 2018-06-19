@@ -1,0 +1,12 @@
+.wrapper 
+{
+    max-width: 1000px;
+    border: red solid;
+}
+
+nav img {
+    max-width: 30px;
+}
+.logo img {
+    max-width: 40px;
+}

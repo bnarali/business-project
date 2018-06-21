@@ -1,0 +1,41 @@
+header{
+    font-family:  Helvetica, sans-serif;
+
+    h1 {
+        padding-top: 50px;
+        font-size: 40px;
+    }
+
+    a {
+        text-decoration: none;
+        color:#8d8d8d;
+    }
+
+
+    .telephone {
+        padding-top: 100px;
+        font-size: 20px;
+       
+       
+    }
+
+
+}
+
+
+.phone img {
+    max-width: 20px;
+}
+
+// .logo img{
+// max-width: 100px;
+// }
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    background-color:black;
+    color:#8d8d8d;
+    padding-left: 14px;
+    padding-right: 24px;
+}
+

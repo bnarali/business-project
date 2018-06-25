@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
@@ -25,56 +24,31 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    
+
     <title>Services</title>
 
-    <!-- temporary - for demo only...delete when done... -->
-    <style>
     
-
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .services-content {
-        display: flex;
-    }
-
-    .services-page-navigation {
-        width: 200px;
-        padding: 20px;
-    }
-
-    .img-computer-repair {
-        display: none;
-    }
-
-    .img-web-design {
-        display: none;
-    }
     
-    </style>
 
 </head>
-<div class="wrapper">
+
 <header>
-    <nav>
+    <div class="topnav">
         <a class="logo">
             <img src="./images/logo.png" alt="logo">
         </a>
 
+        <h1>Pacific InfoTech</h1>
 
+        <div class="telephone">
+            <a class="phone" href="tel:+1413222678">
+                <img src="./images/phone.png" alt="Phone Icon">
+            </a>
 
-
-        <a class="phone" href="tel:+1413222678">
-            <img src="./images/phone.png" alt="Phone Icon">
-        </a>
-
-        <a class="phone" href="tel:+1413222678">+1 514.000.0000</a>
-
-    </nav>
-    <nav>
+            <a class="phone" href="tel:+1413222678">+1 514.000.0000</a>
+        </div>
+    </div>
+    <nav class="headernav">
         <ul>
             <li>
                 <a href="./index.html" class="Home">Home </a>
@@ -88,35 +62,35 @@
             <li>
                 <a href="#0" class="about">About</a>
                 <li>
-                    <a href="./contacts.html" class="contact">Contact Us</a>
+                    <a href="./contact.html" class="contact">Contact Us</a>
                 </li>
             </li>
         </ul>
     </nav>
-    <div>
-        <a href="https://www.facebook.com/">
-            <img src="./images/fb.png" alt="Facebook Social Media Icon">
-        </a>
-        <img src="./images/linked-in.png" alt="linkedIn Social Media Icon">
-        <img src="./images/twitter.png" alt="Twitter Social Media Icon">
-
-    </div>
 </header>
+
 <body class="pg-services">
+    <div class="wrapper">
         <div class="banner">
-                <img src="./images/services.jpg" alt="computer image">
-                <h1 class="page-title">Services</h1>
+            <img src="./images/services.jpg" alt="computer image">
+            <h1 class="bannertext">Services</h1>
         </div>
 
-        <main>
-  
-            <div class="services-content">   
+        <!-- <main> -->
+
+            <div class="services-content">
                 <div class="services-page-navigation">
-                    <nav>
+                    <nav class="service-nav">
                         <ul>
-                            <li><a href="#computer-networking">Computer Networking</a></li>
-                            <li><a href="#computer-repair">Computer Repair</a></li>
-                            <li><a href="#web-design">Web Design</a></li>
+                            <li>
+                                <a href="#computer-networking">Computer Networking</a>
+                            </li>
+                            <li>
+                                <a href="#computer-repair">Computer Repair</a>
+                            </li>
+                            <li>
+                                <a href="#web-design">Web Design</a>
+                            </li>
                         </ul>
                     </nav>
                     <div class="services-page-featured-image">
@@ -130,104 +104,143 @@
                 <section class="services">
 
                     <article class="service-article networking" id="computer-networking">
-                            <h1> Computer Networking</h1>
-                            <p>Network cabling can be one of the more complicated parts of building a high functioning IT infrastructure. Instead of trying to tackle cable spaghetti, hire a professional IT team that can save you lots of trouble and headache when it comes to untangling what can sometimes be an intricate mess. Network Infrastructure Technology technicians and engineers have been doing computer network cabling for clients in industries like healthcare, education and publishing for many years. Hiring a network cabling team from can ensure the seamless operation of your IT systems company-wide. A successful network begins with successful cabling connections. We offer you a competitive advantage and a collaborative partnership with a proactive, motivated team. We have over 15 years of experience and our reliability and 24/7 support are second to none. A Word on Network Cabling Standards</p>   
-                            <a href="#0" >Learn More </a>     
+                        <h1> Computer Networking</h1>
+                        <p>Network cabling can be one of the more complicated parts of building a high functioning IT infrastructure.
+                            Instead of trying to tackle cable spaghetti, hire a professional IT team that can save you lots
+                            of trouble and headache when it comes to untangling what can sometimes be an intricate mess.
+                            Network Infrastructure Technology technicians and engineers have been doing computer network
+                            cabling for clients in industries like healthcare, education and publishing for many years. Hiring
+                            a network cabling team from can ensure the seamless operation of your IT systems company-wide.
+                            A successful network begins with successful cabling connections. We offer you a competitive advantage
+                            and a collaborative partnership with a proactive, motivated team. We have over 15 years of experience
+                            and our reliability and 24/7 support are second to none. A Word on Network Cabling Standards</p>
+                        <a href="#0">Learn More </a>
                     </article>
 
                     <article class="service-article repair" id="computer-repair">
-                            <h1> Computer Repair</h1>
-                            <p>Network cabling can be one of the more complicated parts of building a high functioning IT infrastructure. Instead of trying to tackle cable spaghetti, hire a professional IT team that can save you lots of trouble and headache when it comes to untangling what can sometimes be an intricate mess. Network Infrastructure Technology technicians and engineers have been doing computer network cabling for clients in industries like healthcare, education and publishing for many years. Hiring a network cabling team from can ensure the seamless operation of your IT systems company-wide. A successful network begins with successful cabling connections. We offer you a competitive advantage and a collaborative partnership with a proactive, motivated team. We have over 15 years of experience and our reliability and 24/7 support are second to none. A Word on Network Cabling Standards</p> 
-                            <a href="#0" >Learn More </a>        
+                        <h1> Computer Repair</h1>
+                        <p>Network cabling can be one of the more complicated parts of building a high functioning IT infrastructure.
+                            Instead of trying to tackle cable spaghetti, hire a professional IT team that can save you lots
+                            of trouble and headache when it comes to untangling what can sometimes be an intricate mess.
+                            Network Infrastructure Technology technicians and engineers have been doing computer network
+                            cabling for clients in industries like healthcare, education and publishing for many years. Hiring
+                            a network cabling team from can ensure the seamless operation of your IT systems company-wide.
+                            A successful network begins with successful cabling connections. We offer you a competitive advantage
+                            and a collaborative partnership with a proactive, motivated team. We have over 15 years of experience
+                            and our reliability and 24/7 support are second to none. A Word on Network Cabling Standards</p>
+                        <a href="#0">Learn More </a>
                     </article>
 
                     <article class="service-article design" id="web-design">
-                            <h1>Web Design</h1>
-                            <p>Network cabling can be one of the more complicated parts of building a high functioning IT infrastructure. Instead of trying to tackle cable spaghetti, hire a professional IT team that can save you lots of trouble and headache when it comes to untangling what can sometimes be an intricate mess. Network Infrastructure Technology technicians and engineers have been doing computer network cabling for clients in industries like healthcare, education and publishing for many years. Hiring a network cabling team from can ensure the seamless operation of your IT systems company-wide. A successful network begins with successful cabling connections. We offer you a competitive advantage and a collaborative partnership with a proactive, motivated team. We have over 15 years of experience and our reliability and 24/7 support are second to none. A Word on Network Cabling Standards</p>    
-                            <a href="#0" >Learn More </a>      
+                        <h1>Web Design</h1>
+                        <p>Network cabling can be one of the more complicated parts of building a high functioning IT infrastructure.
+                            Instead of trying to tackle cable spaghetti, hire a professional IT team that can save you lots
+                            of trouble and headache when it comes to untangling what can sometimes be an intricate mess.
+                            Network Infrastructure Technology technicians and engineers have been doing computer network
+                            cabling for clients in industries like healthcare, education and publishing for many years. Hiring
+                            a network cabling team from can ensure the seamless operation of your IT systems company-wide.
+                            A successful network begins with successful cabling connections. We offer you a competitive advantage
+                            and a collaborative partnership with a proactive, motivated team. We have over 15 years of experience
+                            and our reliability and 24/7 support are second to none. A Word on Network Cabling Standards</p>
+                        <a class="learnmore" href="#0">Learn More </a>
                     </article>
                 </section>
-            </div><!-- end services-content -->         
-        </main>
-            
-        <footer>
-                <a class="footerlogo">
-                        <img src="./images/logo.png" alt="logo">
-                    </a>
-                    <div>
-                            <a href="https://www.facebook.com/">
-                                <img src="./images/fb.png" alt="Facebook Social Media Icon">
-                            </a>
-                            <img src="./images/linked-in.png" alt="linkedIn Social Media Icon">
-                            <img src="./images/twitter.png" alt="Twitter Social Media Icon">
-                    
-                        </div>
-                        <a class="phone" href="tel:+1413222678">
-                                <img src="./images/phone.png" alt="Phone Icon">
-                            </a>
-                            <nav class="footernav">
-                                    <ul>
-                                       
-                                        <li>
-                                            <a href="#0" class="about">About</a>
-                                        </li>
-                                                    <li>
-                                                            <a href="#0" class="jobs">Jobs</a>
-                                                        </li>
-                                                        <li>
-                                                <a href="./contacts.html" class="contact">Contact Us</a>
-                                            </li>
-                                        
-                                    </ul>
-                                </nav>
-    <div class"copywrite">
-            <p class="copyright">&copy; 2018 Aila&Bnar |All Rights Reserved</p>
+            </div>
+            <!-- end services-content -->
+        <!-- </main> -->
     </div>
-        </footer>
-<script
-src="https://code.jquery.com/jquery-3.3.1.min.js"
-integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-crossorigin="anonymous"></script>
-<script>
+    <footer>
 
-// Perhaps put this in an external js file...
+        <nav class="footernav">
+            <ul>
 
-// Hide the repair and design articles on page load
-$('#computer-repair').hide();
-$('#web-design').hide();
+                <li>
+                    <a href="#0" class="about">About</a>
+                </li>
+                <li>
+                    <a href="#0" class="jobs">Jobs</a>
+                </li>
+                <li>
+                    <a href="./contacts.html" class="contact">Contact Us</a>
+                </li>
 
-// Grab all the services page nav links
-const $servicesNavLinks = $('.services-page-navigation a');
-// Grab all the services articles
-const $servicesArticles = $('.service-article');
-// Grab all the services images
-const $servicesImages = $('.service-image');
+            </ul>
+        </nav>
+        <div class="footer-icons">
+            <div class="footer-logo">
+                <a>
+                    <img src="./images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/">
+                    <img src="./images/fb.png" alt="Facebook Social Media Icon">
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img src="./images/linked-in.png" alt="LinkedIn Social Media Icon">
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img src="./images/twitter.png" alt="Twitter Social Media Icon">
+                </a>
 
-$servicesNavLinks.click(function(e){
+            </div>
+            <div class="footer-telephone">
+                <a class="phone" href="tel:+1413222678">
+                    <img src="./images/phone.png" alt="Phone Icon">
+                </a>
+                <a class="phone" href="tel:+1413222678">+1 514.000.0000</a>
+            </div>
+        </div>
 
-    // Prevent the browser from jumping to the page links
-    e.preventDefault();
-
-    // hide all the articles
-    $servicesArticles.hide();
-    // hide all the services images
-    $servicesImages.hide();
-
-    // Get the ID link of th link that was clicked on...
-    const theID = $(this).attr('href');
-
-    // Show the article that matches the ID
-    $(theID).show();
-    // Show the service image that matches the ID
-    $(`[data-id="${theID}"]`).show();
-
-    
-
-});
+        <div class="copywright">
+            <p>&copy; 2018 Aila & Bnar | All Rights Reserved</p>
+        </div>
+    </footer>
 
 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script>
+
+        // Perhaps put this in an external js file...
+
+        // Hide the repair and design articles on page load
+        $('#computer-repair').hide();
+        $('#web-design').hide();
+
+        // Grab all the services page nav links
+        const $servicesNavLinks = $('.services-page-navigation a');
+        // Grab all the services articles
+        const $servicesArticles = $('.service-article');
+        // Grab all the services images
+        const $servicesImages = $('.service-image');
+
+        $servicesNavLinks.click(function (e) {
+
+            // Prevent the browser from jumping to the page links
+            e.preventDefault();
+
+            // hide all the articles
+            $servicesArticles.hide();
+            // hide all the services images
+            $servicesImages.hide();
+
+            // Get the ID link of th link that was clicked on...
+            const theID = $(this).attr('href');
+
+            // Show the article that matches the ID
+            $(theID).show();
+            // Show the service image that matches the ID
+            $(`[data-id="${theID}"]`).show();
 
 
-</script>
+
+        });
+
+
+
+
+    </script>
 </body>
+
 </html>

@@ -1,9 +1,9 @@
 
 
-nav{
+nav:not(.service-nav){
     border: gray solid 1px;
-}
-nav a {
+
+ a {
     color:white;
     font-weight: 100;
     letter-spacing: 2px;
@@ -18,13 +18,13 @@ nav a {
    
   }
   
- nav a:hover {
+  a:hover {
     background:rgba(0,0,0,0.3);
   }
   
   
   
-  nav ul {
+ ul {
     border:1px solid black;
     list-style: none;
     margin: 0;
@@ -33,7 +33,59 @@ nav a {
   }
   
 
- nav li {
+  li {
     flex:3;
   }
+}
+nav.service-nav{
+ ul{
+  height: 300px;
+ }
+ ul {
+  border:1px solid black;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+.services-page-navigation {
+    // width: 200px;
+     padding: 40px;
+     ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #f1f1f1;
+    }
+    
+    li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+    
+    /* Change the link color on hover */
+    li a:hover {
+        background-color: #555;
+        color: white;
+    }
+}
+
+ 
+}
   

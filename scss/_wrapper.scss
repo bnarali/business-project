@@ -2,4 +2,25 @@
 
 .wrapper{
     max-width: 1000px;
+    margin:0 auto;
+    border: black solid 1px;
+    min-height: 100%;
+
+}
+.banner img{
+    max-width: 1000px;
+  position: absolute;
+  height: auto;
+}
+
+.bannertext{
+
+position: relative;
+top:140px;
+left:110px;
+ 
+}
+
+.dark-matter{
+    margin-top: 300px;
 }

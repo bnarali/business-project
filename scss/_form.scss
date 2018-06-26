@@ -1,10 +1,11 @@
-/* #### Dark Matter #### */
+/* #### Dark Matter Form #### */
 .dark-matter {
-	margin-left: auto;
+	margin-left: 20px;
+	margin-bottom: 20px;
 	margin-right: auto;
 	max-width: 500px;
 	background: #555;
-	padding: 20px 30px 20px 30px;
+	padding: 50px 70px 50px 70px;
 	font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #D3D3D3;
 	text-shadow: 1px 1px 1px #444;
@@ -88,4 +89,9 @@
 .dark-matter .button:hover {
     color: #333;
     background-color: #EBEBEB;
+}
+
+ h2.havequestion {
+	margin-top: 350px;
+	text-align: center;
 }

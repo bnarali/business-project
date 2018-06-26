@@ -3,7 +3,7 @@
 .wrapper{
     max-width: 1000px;
     margin:0 auto;
-    border: black solid 1px;
+     border:wheat solid 1px;
     min-height: 100%;
 
 }
@@ -21,6 +21,23 @@ left:110px;
  
 }
 
-.dark-matter{
-    margin-top: 300px;
+
+.pagecontent {
+    display: flex;
+ flex: 3;
+}
+.contact-info{
+    margin-right: 20px;
+	margin-bottom: 20px;
+	
+	max-width: 500px;
+	background: #555;
+	padding: 80px 30px 20px 30px;
+	font: 18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #D3D3D3;
+	text-shadow: 1px 1px 1px #444;
+	border: none;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
 }

@@ -12,7 +12,8 @@ h1, h2, h3, h4, p {
   margin-top: 0; }
 
 body {
-  font-family: Helvetica, sans-serif; }
+  font-family: Helvetica, sans-serif;
+  line-height: 1.5em; }
 
 .services-content {
   display: flex;
@@ -134,7 +135,7 @@ nav.service-nav {
     text-decoration: none;
     background-color: #e4b124; }
   nav.service-nav li a:hover {
-    background-color: #29cacd; }
+    background-color: #14adb0; }
 
 /* #### Dark Matter Form #### */
 .dark-matter {
@@ -270,5 +271,43 @@ footer {
 
 .copywright {
   padding-bottom: 5px; }
+
+@media screen and (max-width: 780px) {
+  nav.service-nav {
+    padding-top: 40px;
+    /* Change the link color to #111 (black) on hover */ }
+    nav.service-nav ul {
+      list-style-type: none;
+      margin: 4px;
+      padding: 0;
+      overflow: hidden;
+      justify-content: space-between;
+      flex-direction: row;
+      height: auto;
+      width: auto; }
+    nav.service-nav li {
+      float: left; }
+    nav.service-nav li a {
+      display: block;
+      font-size: 14px;
+      text-align: center;
+      text-decoration: none;
+      padding: 8px; }
+
+  div.services-page-featured-image {
+    display: none; }
+
+  .services-page-navigation {
+    height: 50px; }
+
+  .services-content {
+    display: block; }
+
+  .services {
+    padding-top: 56px;
+    padding-right: 14px;
+    padding-left: 14px; }
+    .services p {
+      font-size: 14px; } }
 
 /*# sourceMappingURL=styles.css.map */

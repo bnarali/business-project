@@ -20,7 +20,7 @@ nav:not(.service-nav){
   
   a:hover {
     // background:rgba(0,0,0,0.3);
-          text-decoration: underline;
+    text-decoration: underline;
     
 
 .underlined {
@@ -73,6 +73,144 @@ li a:hover {
   
 }
 
- 
 }
   
+.nav{
+  background: black;
+  color: white;
+  height: 80px;
+  
+  //overall styling for nav
+  a{
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    line-height: 150%;
+    padding-bottom: 5px;
+    
+    &:hover{
+      color: pink;
+      border-bottom: 2px solid pink;
+      }
+    }
+  
+  ul{
+    padding-left: 0;
+    
+    li{
+      list-style: none;
+      }
+    }
+ 
+  //specific styling for sections of nav
+  &container{
+      max-width: 90%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    
+logo{
+      //margin-right: 100px;
+      }
+    
+    &__list{
+      display: flex;
+      flex-direction: row;
+      
+      li{
+        padding: 5px;
+        margin: 10px;
+        }
+      
+      //.dropDown is the 'a' tag surrounding the name of the drop down menu item
+      .dropDown::after{
+          content: ' ▾ ';
+          display: inline-block;
+          margin-left: 5px;
+          }
+      
+      //nav__container__list--dropDown is the ul under .dropdown 
+      &--dropDown{
+        display: none;
+        position: absolute;
+        background: black;
+        padding: 10px;
+        }
+      }
+    }
+  }
+
+@media screen and (max-width: 725px){
+  .nav{
+  &__container{
+      max-width: 98%;
+    
+  //handle hamburger toggle
+    #hamburgerToggle {
+      position: absolute;
+      right: 1%;
+      top: 25px;
+      padding: 10px 40px 10px 0px;
+      
+      &:hover{
+        color: none;
+        border-bottom: 2px solid transparent;
+        }
+      
+      & span,
+      & span::before,
+      & span::after {
+        content: '';
+        height: 5px;
+        width: 35px;
+        background: white;
+        position: absolute;
+        display: block;
+        transition: all 0.3s ease-in-out;
+      }
+      & span:before {
+        top: -10px;
+      }
+      & span:after {
+        bottom: -10px;
+      }
+      &.active span {
+        background-color: transparent;
+        &:before,
+        &:after {
+          top: 0;
+        }
+        &:before {
+          transform: rotate(45deg);
+        }
+        &:after {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+      
+    &__list{
+      //display: block;
+      display: none;
+      position: absolute;
+      background: black;
+      padding: 0 100px;
+      width: 100%;
+      left: 0;
+      top: 60px;
+      text-align: center;
+      
+      &--dropDown{
+        display: block;
+        position: relative;
+        }
+      li{
+        padding: 5px 0 5px 5px;
+        margin: 10px 0 10px 20px;
+        }
+      }
+    }
+  }
+}
+

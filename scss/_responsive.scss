@@ -1,0 +1,52 @@
+@media only screen and (max-width: 1010px) {
+    .services, #servicesh2 {
+        display: none;
+    }
+
+    .mobile-services {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .subbanner h2 {
+        font-size: 1em;
+    }
+
+    .subbanner img {
+        max-width: 100px;
+    }
+
+    .subbanner article {
+        padding: 15px;
+    }
+}
+
+
+
+@media only screen and (max-width: 700px) {
+
+    .banner {
+        position: static;
+    }
+
+    .banner img {
+        display: none;
+    }
+
+
+  }
+
+  @media only screen and (max-width: 500px) {
+      .subbanner {
+          display: flex;
+          flex-direction: column;
+
+          img {
+              max-width: 100%;
+          }
+      }
+
+  }
+
+ 

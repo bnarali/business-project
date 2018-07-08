@@ -65,6 +65,11 @@ body {
   margin-top: 350px;
   justify-content: space-between; }
 
+.services-index {
+  display: flex;
+  flex-direction: row;
+  width: 1000px; }
+
 .services {
   display: flex;
   max-width: 1000px; }
@@ -117,6 +122,12 @@ body {
 .mobile-services a {
   text-decoration: none;
   color: white; }
+
+#contact-banner {
+  display: none; }
+
+#service-banner {
+  display: none; }
 
 .wrapper {
   max-width: 1000px;
@@ -202,7 +213,8 @@ nav:not(.service-nav) {
     flex: 3; }
 
 nav.service-nav {
-  padding: 40px; }
+  padding: 40px;
+  margin: 5px; }
   nav.service-nav ul {
     height: 300px;
     list-style: none;
@@ -476,11 +488,12 @@ footer {
   .services {
     padding-top: 56px;
     padding-right: 14px;
-    padding-left: 14px; }
+    padding-left: 14px;
+    margin-bottom: 20px; }
     .services p {
       font-size: 14px; } }
 @media only screen and (max-width: 1010px) {
-  .services, #servicesh2 {
+  .services-index, #servicesh2 {
     display: none; }
 
   .mobile-services {
@@ -493,18 +506,33 @@ footer {
     max-width: 100px; }
 
   .subbanner article {
-    padding: 15px; } }
+    padding: 15px; }
+
+  .banner img:first-child {
+    display: none; }
+
+  #contact-banner {
+    display: block; }
+
+  #service-banner {
+    display: block; } }
 @media only screen and (max-width: 700px) {
+  .topnav h1 {
+    font-size: 30px; }
+
   .banner {
     position: static; }
 
-  .banner img {
-    display: none; } }
+  .services h1 {
+    margin-top: 20px; } }
 @media only screen and (max-width: 500px) {
   .subbanner {
     display: flex;
     flex-direction: column; }
     .subbanner img {
-      max-width: 100%; } }
+      max-width: 100%; }
+
+  .services {
+    text-align: center; } }
 
 /*# sourceMappingURL=styles.css.map */

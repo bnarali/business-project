@@ -60,6 +60,12 @@ body{
     justify-content: space-between; 
 }
 
+.services-index {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+}
+
 .services {
     display: flex;
     max-width: 1000px;
@@ -123,3 +129,12 @@ background-color: dimgrey;
     text-decoration: none;
     color: white;
 }
+
+#contact-banner {
+    display: none;
+}
+
+#service-banner {
+    display: none;
+}
+

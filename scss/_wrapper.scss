@@ -27,12 +27,17 @@ left:110px;
  flex: 1;
 }
 .contact-info{
-    margin-right: 10px;
-	margin-bottom: 20px;
+	margin-right: 10px;
+	max-width: 319px;;
 	
-	max-width: 500px;
+	
+	
 	background: #555;
-	padding: 80px 30px 20px 30px;
+	//  padding: 80px 30px 20px 30px;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
 	font: 18px "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #D3D3D3;
 	text-shadow: 1px 1px 1px #444;
@@ -40,4 +45,7 @@ left:110px;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
+}
+.contact-info p  {
+	margin-bottom: 10px;
 }

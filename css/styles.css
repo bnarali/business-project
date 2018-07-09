@@ -151,10 +151,12 @@ body {
 
 .contact-info {
   margin-right: 10px;
-  margin-bottom: 20px;
-  max-width: 500px;
+  max-width: 319px;
   background: #555;
-  padding: 80px 30px 20px 30px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
   font: 18px "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #D3D3D3;
   text-shadow: 1px 1px 1px #444;
@@ -162,6 +164,9 @@ body {
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px; }
+
+.contact-info p {
+  margin-bottom: 10px; }
 
 header {
   font-family: Helvetica, sans-serif; }
@@ -319,14 +324,12 @@ nav.service-nav {
       .nav__container__list li {
         padding: 5px 0 5px 5px;
         margin: 10px 0 10px 20px; } }
-/* #### Dark Matter Form #### */
 .dark-matter {
-  margin-left: 20px;
-  margin-bottom: 20px;
+  margin-left: 10px;
   margin-right: auto;
   max-width: 500px;
   background: #555;
-  padding: 50px 70px 50px 70px;
+  padding: 20px 30px 20px 30px;
   font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #D3D3D3;
   text-shadow: 1px 1px 1px #444;
@@ -408,7 +411,7 @@ nav.service-nav {
 
 .dark-matter .button:hover {
   color: #333;
-  background-color: #EBEBEB; }
+  background-color: #29cacd; }
 
 h2.havequestion {
   margin-top: 350px;
@@ -508,9 +511,6 @@ footer {
   .subbanner article {
     padding: 15px; }
 
-  .banner img:first-child {
-    display: none; }
-
   #contact-banner {
     display: block; }
 
@@ -539,9 +539,7 @@ footer {
 
   .contact-info {
     margin-left: auto;
-    margin-right: auto;
-    padding-left: 80px;
-    padding-right: 80px; } }
+    margin-right: auto; } }
 @media only screen and (max-width: 500px) {
   .subbanner {
     display: flex;

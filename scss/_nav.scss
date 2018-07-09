@@ -3,51 +3,59 @@
 nav:not(.service-nav){
     border: gray solid 1px;
 
- a {
-    color:white;
-    font-weight: 100;
-    letter-spacing: 2px;
-    text-decoration: none;
-    background:black;
-    padding:20px 5px;
-    display: block;
-    width: 100%;
-    text-align: center;
-    transition:all 0.5s;
-    
-   
-  }
-  
-  a:hover {
-    // background:rgba(0,0,0,0.3);
-    text-decoration: underline;
-    
+    ul {
+      border:1px solid black;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display:flex;
+    }
 
-.underlined {
-        text-decoration: underline dotted red;
-      }
-    
-  }
-  
-  
-  
- ul {
-    border:1px solid black;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display:flex;
-  }
-  
 
-  li {
-    flex:3;
-  }
+    li {
+      flex:3;
+    }
+
+    a {
+        color:white;
+        font-weight: 100;
+        letter-spacing: 2px;
+        text-decoration: none;
+        background:black;
+        padding:20px 5px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        transition:all 0.5s;
+    }
+
+    a:hover {
+      // background:rgba(0,0,0,0.3);
+      text-decoration: underline;
+  
+    }
+
+    @media screen and (max-width: 790px) {
+        display: none;
+
+        ul {
+          display: block;
+        }
+
+        .show & {
+          display: block;
+        }
+
+    }
+
 
 }
+
+
+
 nav.service-nav{
-  padding: 40px;
-  margin: 5px;
+  // padding: 40px;
+  // margin: 5px;
  ul{
   height: 300px;
   
@@ -112,9 +120,7 @@ li a:hover {
       flex-direction: row;
       justify-content: space-between;
     
-logo{
-      //margin-right: 100px;
-      }
+
     
     &__list{
       display: flex;

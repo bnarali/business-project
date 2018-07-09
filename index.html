@@ -28,67 +28,48 @@
 
 <header>
 
-    <div class="topnav">
-        <a class="logo">
-            <img src="./images/logo.png" alt="logo">
-        </a>
-
-        <h1>Pacific InfoTech</h1>
-
-        <div class="telephone">
-            <a class="phone" href="tel:+1413222678">
-                <img src="./images/phone.png" alt="Phone Icon">
-            </a>
-
-            <a class="phone" href="tel:+1413222678">+1 514.000.0000</a>
-        </div>
-    </div>
-
-    <div class="header">
-
-    </div>
-
-<div class="desktop-nav">   
-    <nav>
-        <ul>
-            <li>
-                <a href="./index.html" class="Home">Home </a>
-            </li>
-            <li>
-                <a href="./services.html" class="services">Services</a>
-            </li>
-            <li>
-                <a href="#0" class="teammembers">Team Members</a>
-            </li>
-            <li>
-                <a href="#0" class="about">About</a>
-                <li>
-                    <a href="./contact.html" class="contact">Contact Us</a>
-                </li>
-            </li>
-        </ul>
-    </nav>
-
-    <button class="hamburger-menu">
-            <span class="hamburger-menu-content">
-                <span class="sr-only"></span>
-                <span class="bar"></span>
-            </span>
-        </button>
-
-</div><!--end desktop nav-->
-
-
-
-
-    <!-- <div>
-        <a href="https://www.facebook.com/">
-            <img src="./images/fb.png" alt="Facebook Social Media Icon">
-        </a>
-        <img src="./images/linked-in.png" alt="linkedIn Social Media Icon">
-        <img src="./images/twitter.png" alt="Twitter Social Media Icon">
-
-    </div> -->
+        <div class="topnav">
+                <a class="logo">
+                    <img src="./images/logo.png" alt="logo">
+                </a>
+                <button class="hamburger-menu">
+                        <span class="hamburger-menu-content">
+                            <span class="sr-only">Menu</span>
+                            <span class="bar"></span>
+                        </span>
+                    </button>
+                <h1>Pacific InfoTech</h1>
+        
+                <div class="telephone">
+                    <a class="phone" href="tel:+1413222678">
+                        <img src="./images/phone.png" alt="Phone Icon">
+                    </a>
+        
+                    <a class="phone" href="tel:+1413222678">+1 514.000.0000</a>
+                </div>
+            </div>
+           
+            <nav class="headernav">
+                <ul>
+                    <li>
+                        <a href="./index.html" class="Home">Home </a>
+                    </li>
+                    <li>
+                        <a href="./services.html" class="services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#0" class="teammembers">Team Members</a>
+                    </li>
+                    <li>
+                        <a href="#0" class="about">About</a>
+                        <li>
+                            <a href="./contact.html" class="contact">Contact Us</a>
+                        </li>
+                    </li>
+                </ul>
+            </nav>
+   
+         
 </header>
 
 <body>
@@ -212,6 +193,19 @@ src="https://code.jquery.com/jquery-3.3.1.min.js"
 integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 crossorigin="anonymous"></script>
 <script src="scripts/script.js"></script>
+<script>
+    const $hamburger = $('.hamburger-menu');
+const $bar = $('.bar');
+const $body = $('body');
+const $mobile = $('.headernav');
+
+$hamburger.click(showMenu);
+function showMenu(){
+    $body.toggleClass('show');
+    $mobile.fadeToggle();
+    $bar.toggleClass('animate');
+}
+</script>
 </body>
 
 </html>

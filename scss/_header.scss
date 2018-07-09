@@ -37,5 +37,18 @@ header{
     color:#8d8d8d;
     padding-left: 14px;
     padding-right: 24px;
+
+    @media screen and (max-width: 790px) {
+        flex-wrap: wrap;
+
+        h1 {
+    
+         padding-left: 15px;
+         width: 100%;
+
+        }
+
+    }
+
 }
 

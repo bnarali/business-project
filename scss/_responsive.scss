@@ -26,13 +26,13 @@
     //     display: none;
     // }
 
-    #contact-banner {
-        display: block;
-    }
+    // #contact-banner {
+    //     display: block;
+    // }
 
-    #service-banner {
-        display: block;
-    }
+    // #service-banner {
+    //     display: block;
+    // }
 
 }
 
@@ -40,10 +40,7 @@
 
 @media only screen and (max-width: 700px) {
 
-    .topnav {
-        h1 { font-size: 30px;}
-    }
-    
+   
     .banner {
         position: static;
     }
@@ -57,9 +54,7 @@
         flex-direction: column;
     }
 
-    .topnav {
-        h1 { padding-left: 15px;}
-    }
+
 
     .pagecontent form {
         margin: 0 auto;
@@ -113,7 +108,7 @@
     .headernav {
         display: none;
     }
-
+  
     body {
         padding-top: 50px;
     }

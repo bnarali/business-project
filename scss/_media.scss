@@ -1,7 +1,7 @@
 @media screen and (max-width: 780px) {
    
     nav.service-nav{
-       padding-top: 40px;
+    //    padding-top: 40px;
       
         
         ul {
@@ -27,13 +27,14 @@
             text-decoration: none;
 
            
-            padding: 8px;
+            padding: 4px;
            
         }
+    }
         
         /* Change the link color to #111 (black) on hover */
       
-       }
+       
       div.services-page-featured-image{
           display: none;
 
@@ -48,12 +49,14 @@
         padding-top: 56px;
         padding-right: 14px;
         padding-left: 14px;
-        margin-bottom: 20px;
         p{
             font-size: 14px;
         }
+        }
     }
-    }  
+
+
+    
 
 
 //     @media screen and (max-width: 490px) { 

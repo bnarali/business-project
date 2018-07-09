@@ -147,10 +147,10 @@ body {
 
 .pagecontent {
   display: flex;
-  flex: 3; }
+  flex: 1; }
 
 .contact-info {
-  margin-right: 20px;
+  margin-right: 10px;
   margin-bottom: 20px;
   max-width: 500px;
   background: #555;
@@ -351,8 +351,8 @@ nav.service-nav {
 
 .dark-matter label > span {
   float: left;
-  width: 20%;
-  text-align: right;
+  width: 40%;
+  text-align: left;
   padding-right: 10px;
   margin-top: 10px;
   font-weight: bold; }

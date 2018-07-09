@@ -70,6 +70,35 @@
             <span class="bar"></span>
         </span>
     </button>
+    <nav role="navigation">
+        <div id="menuToggle">
+            <input type="checkbox" />
+
+            <!--Some spans to act as a hamburger-->
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <!--the menu is inside of the button-->
+            <ul id="menu">
+                <li>
+                    <a href="./index.html" class="Home">Home </a>
+                </li>
+                <li>
+                    <a href="./services.html" class="services">Services</a>
+                </li>
+                <li>
+                    <a href="#0" class="teammembers">Team Members</a>
+                </li>
+                <li>
+                    <a href="#0" class="about">About</a>
+                    <li>
+                        <a href="./contact.html" class="contact">Contact Us</a>
+                    </li>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
 </header>
 
@@ -88,65 +117,58 @@
         </div>
         <div class="pagecontent">
             <form action="" method="post" class="dark-matter">
-
                 <label>
-                    <span>Your Name :</span>
+                    <span for="name" required>Your Name :</span>
                     <input id="name" type="text" name="name" placeholder="Your Full Name" />
                 </label>
-
-                <label>
+                <label for="email" required>
                     <span>Your Email :</span>
                     <input id="email" type="email" name="email" placeholder="Valid Email Address" />
                 </label>
-
-                <label>
+                <labe for="selection">
+                    <span>Subject :</span>
+                    <select name="selection" id="selection">
+                        <option value="web-design">Web Design Querry</option>
+                        <option value="networking">Network Querry</option>
+                        <option value="repair">Computer Repair Querry</option>
+                        <option value="other">Other</option>
+                    </select>
+                </labe>
+                <label for="message" required>
                     <span>Message :</span>
                     <textarea id="message" name="message" placeholder="Your Message to Us"></textarea>
                 </label>
-                <div class="inputs-services">
+                <div class="inputs-occupation">
+                    <h3>Your Occupation</h3>
 
-                    <div class="inputs-occupation">
-                        <h3>Your Occupation</h3>
+                    <input type="radio" id="occupation-business" value="business-owner" name="occupation" checked>
+                    <label for="occupation-business">Business Owner</label>
+                    <br>
 
-                        <input type="radio" id="occupation-business" value="business-owner" name="occupation" checked>
-                        <label for="occupation-business">Business Owner</label>
-                        <br>
+                    <input type="radio" id="occupation-student" value="student" name="occupation">
+                    <label for="occupation-student">Student</label>
+                    <br>
 
-                        <input type="radio" id="occupation-student" value="student" name="occupation">
-                        <label for="occupation-student">Student</label>
-                        <br>
+                    <input type="radio" id="occupation-employee" value="employee" name="occupation">
+                    <label for="occupation-employee">Employee</label>
+                    <br>
+                    <div class="inputs-sign-up">
 
-                        <input type="radio" id="occupation-employee" value="employee" name="occupation">
-                        <label for="occupation-employee">Employee</label>
-                        <br>
+                        <input type="checkbox" id="sign-up" value="newsletter" name="newsletter[]" checked>
+                        <label for="sign-up">Sign me up for monthly newsletter</label>
+
                     </div>
-                    <label>
-                        <span>Subject :</span>
-                        <select name="selection">
-                            <option value="web-design">Web Design Querry</option>
-                            <option value="networking">Network Querry</option>
-                            <option value="repair">Computer Repair Querry</option>
-                            <option value="other">Other</option>
-                        </select>
-                        <div class="inputs-sign-up">
-
-                            <input type="checkbox" id="sign-up" value="newsletter" name="newsletter[]" checked>
-                            <label for="sign-up">Sign me up for monthly newsletter</label>
-
-
-                        </div>
-                    </label>
+                    <!-- </label> -->
                     <label>
                         <span>&nbsp;</span>
                         <input type="button" class="button" value="Send" />
                     </label>
             </form>
 
-
-
-            </div>
+        </div>
+            
             <div class="contact-info">
-                <p>3811 Moncton Street
+                <p class="contactadd">3811 Moncton Street
                     <br> Richmond, BC
                     <br> Canada
                     <br> V7E 3A7
@@ -154,53 +176,42 @@
                     <br> Phone: +514-000-0000
                     <br> E-mail: info@pi.com</p>
             </div>
-        </div>
+        
     </div>
-        <footer>
+    <footer>
 
-            <nav class="footernav">
-                <ul>
+        <nav class="footernav">
+            <ul>
 
-                    <li>
-                        <a href="#0" class="about">About</a>
-                    </li>
-                    <li>
-                        <a href="#0" class="jobs">Jobs</a>
-                    </li>
-                    <li>
-                        <a href="./contacts.html" class="contact">Contact Us</a>
-                    </li>
+                <li>
+                    <a href="#0" class="about">About</a>
+                </li>
+                <li>
+                    <a href="#0" class="jobs">Jobs</a>
+                </li>
+                <li>
+                    <a href="./contacts.html" class="contact">Contact Us</a>
+                </li>
 
-                </ul>
-            </nav>
-            <div class="footer-icons">
-                <div class="footer-logo">
-                    <a>
-                        <img src="./images/logo.png" alt="logo">
-                    </a>
-                </div>
-                <div class="social-media">
-                    <a href="https://www.facebook.com/">
-                        <img src="./images/fb.png" alt="Facebook Social Media Icon">
-                    </a>
-                    <a href="https://www.facebook.com/">
-                        <img src="./images/linked-in.png" alt="LinkedIn Social Media Icon">
-                    </a>
-                    <a href="https://www.facebook.com/">
-                        <img src="./images/twitter.png" alt="Twitter Social Media Icon">
-                    </a>
-
-                </div>
-                <div class="footer-telephone">
-                    <a class="phone" href="tel:+1413222678">
-                        <img src="./images/phone.png" alt="Phone Icon">
-                    </a>
-                    <a class="phone" href="tel:+1413222678">+1 514.000.0000</a>
-                </div>
+            </ul>
+        </nav>
+        <div class="footer-icons">
+            <div class="footer-logo">
+                <a>
+                    <img src="./images/logo.png" alt="logo">
+                </a>
             </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/">
+                    <img src="./images/fb.png" alt="Facebook Social Media Icon">
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img src="./images/linked-in.png" alt="LinkedIn Social Media Icon">
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img src="./images/twitter.png" alt="Twitter Social Media Icon">
+                </a>
 
-            <div class="copywright">
-                <p>&copy; 2018 Aila & Bnar | All Rights Reserved</p>
             </div>
         </footer>
         <!-- </main> -->
@@ -208,6 +219,19 @@
         src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+            <div class="footer-telephone">
+                <a class="phone" href="tel:+1413222678">
+                    <img src="./images/phone.png" alt="Phone Icon">
+                </a>
+                <a class="phone" href="tel:+1413222678">+1 514.000.0000</a>
+            </div>
+        </div>
+
+        <div class="copywright">
+            <p>&copy; 2018 Aila & Bnar | All Rights Reserved</p>
+        </div>
+    </footer>
+    <!-- </main> -->
     <script src="scripts/script.js"></script>
 </body>
 

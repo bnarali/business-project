@@ -524,7 +524,24 @@ footer {
     position: static; }
 
   .services h1 {
-    margin-top: 20px; } }
+    margin-top: 20px; }
+
+  .pagecontent {
+    display: flex;
+    flex-direction: column; }
+
+  .topnav h1 {
+    padding-left: 15px; }
+
+  .pagecontent form {
+    margin: 0 auto;
+    margin-bottom: 20px; }
+
+  .contact-info {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 80px;
+    padding-right: 80px; } }
 @media only screen and (max-width: 500px) {
   .subbanner {
     display: flex;
@@ -533,6 +550,22 @@ footer {
       max-width: 100%; }
 
   .services {
-    text-align: center; } }
+    text-align: center; }
+
+  .topnav {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    .topnav .telephone {
+      padding-top: 0px; } }
+@media only screen and (max-width: 400px) {
+  .topnav {
+    display: none; }
+
+  .headernav {
+    display: none; }
+
+  body {
+    padding-top: 50px; } }
 
 /*# sourceMappingURL=styles.css.map */

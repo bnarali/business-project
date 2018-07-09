@@ -269,7 +269,6 @@ nav.service-nav {
         padding: 5px;
         margin: 10px; }
       .navcontainer__list .dropDown::after {
-        content: ' Γû╛ ';
         display: inline-block;
         margin-left: 5px; }
       .navcontainer__list--dropDown {

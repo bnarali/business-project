@@ -555,14 +555,12 @@ footer {
     text-align: center; }
 
   .topnav {
-    display: flex;
-    flex-direction: column;
     text-align: center; }
     .topnav .telephone {
       padding-top: 0px; } }
 @media only screen and (max-width: 400px) {
-  .topnav {
-    display: none; }
+  .topnav h1 {
+    font-size: 30px; }
 
   .headernav {
     display: none; }

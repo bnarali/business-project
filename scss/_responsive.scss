@@ -87,8 +87,7 @@
 
       .topnav {
 
-      display: flex;
-      flex-direction: column;
+     
       text-align: center;
 
     .telephone, {
@@ -102,7 +101,9 @@
   @media only screen and (max-width: 400px) {
     
     .topnav {
-        display: none;
+        h1 {
+            font-size: 30px;
+        }
     }
 
     .headernav {

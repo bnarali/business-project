@@ -543,7 +543,10 @@ footer {
 
   .contact-info {
     margin-left: auto;
-    margin-right: auto; } }
+    margin-right: auto; }
+
+  .topnav h1 {
+    text-align: center; } }
 @media only screen and (max-width: 500px) {
   .subbanner {
     display: flex;
@@ -554,13 +557,12 @@ footer {
   .services {
     text-align: center; }
 
-  .topnav {
-    text-align: center; }
-    .topnav .telephone {
-      padding-top: 0px; } }
+  .telephone {
+    padding-top: 0px; } }
 @media only screen and (max-width: 400px) {
   .topnav h1 {
-    font-size: 30px; }
+    font-size: 30px;
+    text-align: center; }
 
   .headernav {
     display: none; }

@@ -525,7 +525,10 @@ footer {
     max-width: 100px; }
 
   .subbanner article {
-    padding: 15px; } }
+    padding: 15px; }
+
+  .topnav h1 {
+    text-align: center; } }
 @media only screen and (max-width: 700px) {
   .banner {
     position: static; }
@@ -546,19 +549,25 @@ footer {
     margin-right: auto; }
 
   .topnav h1 {
-    text-align: center; } }
+    text-align: center; }
+  .topnav .telephone {
+    margin-top: 0px; } }
 @media only screen and (max-width: 500px) {
   .subbanner {
     display: flex;
     flex-direction: column; }
     .subbanner img {
-      max-width: 100%; }
+      max-width: 100%; } }
+.footer-telephone a {
+  color: black;
+  font-size: 1px; }
 
-  .services {
-    text-align: center; }
+.services {
+  text-align: center; }
 
-  .telephone {
-    padding-top: 0px; } }
+.telephone {
+  padding-top: 0px; }
+
 @media only screen and (max-width: 400px) {
   .topnav h1 {
     font-size: 30px;

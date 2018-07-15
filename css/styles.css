@@ -38,12 +38,19 @@ body {
   -moz-border-radius: 4px;
   border-radius: 4px;
   border: solid 1px #20538D;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2); }
 
-#learn:hover, #quote:hover .mobile-services:hover {
+a#learn, a#quote {
+  position: relative;
+  left: 4%;
+  text-decoration: none;
+  background-color: #d5d1cb;
+  z-index: 999;
+  transform: translate(-9%, -18%); }
+
+#learn:hover, #quote:hover, .mobile-services:hover {
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
   transition-duration: 0.2s;
@@ -55,7 +62,7 @@ body {
 
 .services-content {
   display: flex;
-  margin-top: 150px;
+  margin-top: 210px;
   justify-content: space-between; }
 
 .services-index {
@@ -86,7 +93,7 @@ body {
 
 .subbanner {
   display: flex;
-  padding-top: 400px;
+  padding-top: 70px;
   padding-bottom: 50px; }
 
 .subbanner img {
@@ -141,7 +148,7 @@ body {
   left: 9%;
   padding-top: 114px;
   z-index: 999;
-  max-width: 375px;
+  max-width: 275px;
   transform: translate(-9%, -18%); }
 
 .pagecontent {
@@ -434,7 +441,7 @@ nav.service-nav {
   background-color: #29cacd; }
 
 h2.havequestion {
-  margin-top: 350px;
+  margin-top: 250px;
   text-align: center; }
 
 footer {
@@ -511,7 +518,8 @@ footer {
     .services p {
       font-size: 14px; } }
 @media only screen and (max-width: 1010px) {
-  .services-index, #servicesh2 {
+  .services-index,
+  #servicesh2 {
     display: none; }
 
   .mobile-services {
@@ -529,6 +537,9 @@ footer {
   .topnav h1 {
     text-align: center; } }
 @media only screen and (max-width: 700px) {
+  .bannertext {
+    font-size: 28px; }
+
   .services h1 {
     margin-top: 20px; }
 
@@ -558,6 +569,11 @@ footer {
   color: black;
   font-size: 1px; }
 
+.bannertext {
+  font-size: 36px;
+  left: 15%;
+  padding-top: 70px; }
+
 .services {
   text-align: center; }
 
@@ -565,15 +581,31 @@ footer {
   padding-top: 0px; }
 
 @media only screen and (max-width: 400px) {
+  .bannertext H1 {
+    font-size: 20px; }
+
   .topnav h1 {
-    font-size: 30px;
+    font-size: 22px;
     text-align: center; }
 
   .headernav {
     display: none; }
 
   body {
-    padding-top: 50px; } }
+    padding-top: 50px; }
+
+  .footer-logo img {
+    max-width: 52px; }
+
+  .social-media img {
+    max-width: 23px; }
+
+  nav:not(.service-nav) a {
+    font-size: 13px;
+    padding: 9px 1px; }
+
+  .services-content {
+    margin-top: 58px; } }
 .hamburger-menu {
   border-radius: 10px;
   background-color: transparent;

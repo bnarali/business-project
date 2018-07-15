@@ -30,37 +30,38 @@ nav:not(.service-nav){
     }
 
     a:hover {
-      // background:rgba(0,0,0,0.3);
+      
       text-decoration: underline;
   
     }
 
-    @media screen and (max-width: 790px) {
-        display: none;
+   
 
-        ul {
-          display: block;
-        }
 
-        .show & {
-          display: block;
-        }
-
+}
+@media screen and (max-width: 790px) {
+  nav.headernav{
+  display: none;
+    
+    ul {
+      display: block;
     }
 
-
+    .show & {
+      // display: block;
+      display: inherit;
+    }
+  }
+   
 }
 
 
 
 nav.service-nav{
-  // padding: 40px;
-  // margin: 5px;
- ul{
-  height: 300px;
+  display: block;
   
- 
-  // border:1px solid black;
+ ul{
+  height: 300px; 
   list-style: none;
   margin: 0;
    padding: 0;

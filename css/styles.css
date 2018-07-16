@@ -93,7 +93,7 @@ a#learn, a#quote {
 
 .subbanner {
   display: flex;
-  padding-top: 70px;
+  padding-top: 170px;
   padding-bottom: 50px; }
 
 .subbanner img {
@@ -571,8 +571,8 @@ footer {
 
 .bannertext {
   font-size: 36px;
-  left: 15%;
-  padding-top: 70px; }
+  left: 5%;
+  padding-top: 107px; }
 
 .services {
   text-align: center; }
